@@ -1,0 +1,213 @@
+/* select */
+.select {
+	position: relative;
+	float: left;
+	margin: 0 5px;
+}
+
+.select dt {
+	color: #fff;
+	display: inline-block;
+	border: 1px solid #ff6c00;
+	border-radius: 4px;
+	background: #ff6c00 url(../../image/wbtTestPlayer/selecticon.png) no-repeat 74px 8px;
+	padding-left: 8px;
+	cursor: pointer;
+	padding-right: 12px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	position: relative;
+	z-index: 99;
+	border-radius: 2px;
+}
+
+.select dt:hover,.select dt.cur {
+	border: 1px solid #ff6c00;
+	box-shadow: 0 0 3px #ff6c00;
+}
+
+.select dd {
+	position: absolute;
+	left: 0px;
+	top: 25px;
+	border: 1px solid #fff;
+	background: #fff;
+	display: none;
+	z-index: 101;
+}
+
+.select dd ul {
+	padding: 2px;
+	width: auto;
+	max-height: 250px;
+	overflow: auto;
+}
+
+.select dd ul li a {
+	line-height: 28px;
+	display: block;
+	padding: 0 8px;
+	text-decoration: none;
+	color: #454545;
+}
+
+.select dd ul li a:hover {
+	background: #ff6c00;
+	color: #fff;
+}
+
+/* select  end*/ /*selectt*/
+.selectt {
+	position: relative;
+	float: left;
+	margin: 0 10px;
+}
+
+.selectt dt {
+	height: 25px;
+	display: inline-block;
+	border: 1px solid #ff7003;
+	background: #fff url(../../image/wbtTestPlayer/ico.gif) no-repeat 76px center;
+	line-height: 25px;
+	padding-left: 10px;
+	cursor: pointer;
+	width: 80px;
+	padding-right: 12px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	position: relative;
+	z-index: 99;
+	border-radius: 2px;
+	font-size: 14px;
+}
+
+.selectt dt:hover,.select dt.cur {
+	border: 1px solid #ff7003;
+	box-shadow: 0 0 3px #ff7003;
+}
+
+.selectt dd {
+	position: absolute;
+	left: 0;
+	top: 26px;
+	border: 1px solid #ff7003;
+	background: #fff;
+	display: none;
+	z-index: 101;
+}
+
+.selectt dd ul {
+	padding: 4px;
+	width: 93px;
+	max-height: 250px;
+	overflow: auto;
+}
+
+.selectt dd ul li a {
+	line-height: 28px;
+	display: block;
+	padding: 0 8px;
+	text-decoration: none;
+	color: #666;
+	font-size: 14px;
+}
+
+.selectt dd ul li a:hover {
+	background: #ff7003;
+	text-decoration: none;
+	color: #666;
+}
+
+/* selectt */ /* star */
+.rating i {
+	display: block;
+	float: left;
+	width: 29px;
+	height: 27px;
+	background: url(../../image/wbtTestPlayer/star_normal.png) no-repeat 0 0;
+	margin: 0px 5px;
+}
+
+/** Colors */
+.rating-1 .star-1,.rating-1-half .star-1 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-1-half .star-2 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-2 .star-1,.rating-2-half .star-1 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-2 .star-2,.rating-2-half .star-2 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-2-half .star-3 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-3 .star-1,.rating-3-half .star-1 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-3 .star-2,.rating-3-half .star-2 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-3 .star-3,.rating-3-half .star-3 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-3-half .star-4 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-4 .star-1,.rating-4-half .star-1 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-4 .star-2,.rating-4-half .star-2 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-4 .star-3,.rating-4-half .star-3 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-4 .star-4,.rating-4-half .star-4 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-4-half .star-5 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-5 .star-1,.rating-5-half .star-1 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-5 .star-2,.rating-5-half .star-2 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-5 .star-3,.rating-5-half .star-3 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-5 .star-4,.rating-5-half .star-4 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-5 .star-5,.rating-5-half .star-5 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+
+.rating-5-half .star-6 {
+	background: url(../../image/wbtTestPlayer/star_highlight.png) no-repeat 0 0;
+}
+/* star  end*/

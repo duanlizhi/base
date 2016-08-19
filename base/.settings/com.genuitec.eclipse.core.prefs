@@ -1,0 +1,4 @@
+#Wed Jan 21 15:47:07 CST 2015
+eclipse.preferences.version=1
+validator.Checked=src/main/webapp,target/base/resources
+validator.Unchecked=

@@ -1,0 +1,43 @@
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd">  
+    <tlib-version>0.9</tlib-version>  
+    <short-name>w</short-name>  
+    <uri>http://www.xiaochejiang.com/tags/pager</uri>  
+      
+    <tag>  
+        <name>pager</name>  
+        <tag-class>com.xcj.common.page.PagerTag</tag-class>  
+        <body-content>empty</body-content>  
+        <attribute>  
+            <name>currentPage</name>  
+            <required>true</required>  
+            <rtexprvalue>true</rtexprvalue>  
+            <type>int</type>  
+        </attribute>  
+        <attribute>  
+            <name>totalsCount</name>  
+            <required>true</required>  
+            <rtexprvalue>true</rtexprvalue>  
+            <type>int</type>  
+        </attribute>  
+        <attribute>  
+            <name>pageSize</name>  
+            <required>true</required>  
+            <rtexprvalue>true</rtexprvalue>  
+            <type>int</type>  
+        </attribute>  
+        <attribute>  
+            <name>url</name>  
+            <required>true</required>  
+            <rtexprvalue>true</rtexprvalue>  
+            <type>java.lang.String</type>  
+        </attribute>
+         <attribute>  
+            <name>formName</name>  
+            <required>false</required>  
+            <rtexprvalue>true</rtexprvalue>  
+            <type>java.lang.String</type>  
+        </attribute>    
+    </tag>  
+</taglib>

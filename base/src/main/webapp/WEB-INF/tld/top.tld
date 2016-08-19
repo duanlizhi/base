@@ -1,0 +1,13 @@
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd">  
+    <tlib-version>0.9</tlib-version>  
+    <short-name>t</short-name>  
+    <uri>http://www.xiaochejiang.com/tags/top</uri>  
+      
+    <tag>  
+        <name>top</name>  
+        <tag-class>com.xcj.common.top.TopTag</tag-class>  
+        <body-content>empty</body-content>  
+    </tag>  
+</taglib>

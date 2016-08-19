@@ -1,0 +1,146 @@
+body,html{
+margin: none;
+}
+.login {
+  background-color: #363c41 !important;
+  color: #fff;
+}
+
+/* .login .logo {
+      width: 360px;
+      margin: 0 auto;   
+      margin-top:60px;
+      text-align: center;
+      font-size: 50px;
+      letter-spacing: 30px;
+      font-weight: bold;
+      color: #cc0000;
+      background: 
+  } */  
+.form-title{
+  width: 366px;
+  height: 31px;
+  position: absolute;
+  top: -75px;
+  left: 40px;
+  font-size: 30px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Microsoft Yahei";
+}
+.login .content {
+  position: relative;
+  background-color:#ECF0F1;
+  width:314px;
+  height: 180px;
+  margin: 200px auto; 
+  padding:60px 23px 23px 23px; 
+  border-radius: 4px;
+}
+
+.login .content .Prompt {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 23px;
+  width: 313px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #cc0000;
+  border-radius:4px; 
+  font-size: 12px;
+}
+
+.login .content .control-group {
+  width: 293px;
+  padding: 5px 10px;
+  height: 34px;
+  line-height: 34px;
+  text-align: left;
+  border: 1px solid #fff;
+  border-radius:4px;
+  margin-bottom:18px; 
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    background-image: url("../images/glyphicons-halflings.png");
+}
+
+.icon-user {
+    background-position: -168px 0px;
+}
+
+.icon-lock {
+   background-position: -287px -24px;
+}
+
+.input-icon.left i {
+    color: red;
+    display: block !important;
+    position: absolute !important;
+    z-index: 1;
+    margin: 17px 0px 4px 285px;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+.login .content .control-group.button{
+  width: 314px;
+  height: 46px;
+  background: #cc0000;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+}
+
+
+.input-icon.left input {
+    padding-left: 10px !important;
+}
+input{
+  outline-color:#363c41;}
+input
+{
+ 
+  onfocus: expression(onfocus=function (){this.style.color='red';this.style.borderColor ='#466296'});
+  onblur: expression(onblur=function () {this.style.color='';this.style.borderColor =''});
+}
+/* .login .content a{
+text-decoration:none;
+} */
+
+.forget-password{
+  text-align: center;
+  margin: 4px auto;
+  font-size: 12px;
+  color: #363c41;
+}
+
+.login .language {
+  position: absolute;
+  bottom: 1%;
+  left: 43%;
+text-align: center;
+width: 150px;
+margin: 0px auto;
+color: #fff;
+font-size: 14px;
+}
+
+
+

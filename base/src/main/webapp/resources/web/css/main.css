@@ -1,0 +1,212 @@
+.container{
+    background: url("../image/wbtPlayer/back_de.jpg") #f2f2f2;
+    width: 1024px;
+    height: 580px;
+    margin:0 auto;
+    position:relative;
+}
+.banner{
+    height: 50px;
+    background: #f2f2f2;
+    box-shadow: 1px 2px 2px #c9c9c9;
+}
+.btn_zu{
+    float: left;
+    width:165px;
+    height:48px;
+}
+.btn{
+    background-image: url("../image/wbtPlayer/logo_bk.png");
+    background-repeat: no-repeat;
+    width:33px;
+    height: 33px;
+    margin-left: 17px;
+    margin-top:8px;
+    float:left;
+}
+.btn_pre{
+    background-position: -334px 0;
+}
+.btn_pre:active{
+    background-position: -367px 0;
+}
+.btn_pre_no{
+    background-position: 0 0;
+}
+
+.btn_next{
+    background-position: -36px 0;
+}
+.btn_next:active{
+    background-position: -266px 0;
+}
+.btn_next_no{
+    background-position: -299px 0;
+}
+.btn_voice{
+    background-position: -76px 0;
+}
+.banner_con{
+    float: left;
+    margin:23px 0 0 0;
+    width:720px;
+}
+.banner_con ul li{
+    float: left;
+    color: #454545;
+    width: 72px;
+    height: 30px;
+   text-align: center;
+    line-height: 30px;
+}
+.btn_ques{
+    background-position: -109px 0;
+}
+.btn_close{
+    background-position: -141px 0;
+}
+.mar_le_37{
+    margin-left: 47px;
+}
+.banner_active{
+    background-image: url("../image/wbtPlayer/logo_bk.png");
+    background-position: -175px 0;
+    background-repeat: no-repeat;
+    color:#c01b1a !important;
+    width: 90px !important;
+    height:30px;
+}
+.btn_voice_no{
+    background-position: -313px -35px;    
+}
+.banner_con ul li button{
+	height:30px;
+	line-height:30px;
+	width:90px;
+	text-align:center;
+}
+.banner_active button{
+	color:#c01b1a !important;
+}
+.gongju_box{
+    box-shadow: 4px 4px 2px #929292;
+    position: absolute;
+    top: 178px;
+    width: 100px;
+    height: 280px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background: #f2f2f2;
+    color:#403f3f;
+    display: none;
+}
+.btn_more{
+    color: #c01b1a;
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    line-height: 8px;
+    background-image: url("../image/wbtPlayer/close_gongju.png") ;
+    background-position: 0px 2px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 14px;
+}
+.btn_gongju{
+    background: url("../image/wbtPlayer/logo_bk.png");
+    width: 52px;
+    height: 52px;
+    margin:7px 25px 0;
+
+}
+.gongju_box span{
+    text-align:center;
+    line-height: 27px;
+    width: 100px;
+    display: block;
+    font-family: 微软雅黑;
+
+}
+.btn_gj{
+    background-position: -156px -34px;
+    animation: btn_frames 1s ease-in-out 0s infinite ;
+    /* Firefox: */
+    -moz-animation:btn_frames 1s ease-in-out 0s infinite ;
+    /* Safari 和 Chrome: */
+    -webkit-animation: btn_frames 1s ease-in-out 0s infinite;
+    /* Opera: */
+    -o-animation: btn_frames 1s ease-in-out 0s infinite;
+}
+.btn_gj_no{
+    background-position: 0 -34px;
+}
+.btn_cl{
+    background-position: -207px  -34px;
+    animation: btn_frames 1s ease-in-out 0s infinite ;
+    /* Firefox: */
+    -moz-animation:btn_frames 1s ease-in-out 0s infinite ;
+    /* Safari 和 Chrome: */
+    -webkit-animation: btn_frames 1s ease-in-out 0s infinite;
+    /* Opera: */
+    -o-animation: btn_frames 1s ease-in-out 0s infinite;
+}
+.btn_cl_no{
+    background-position: -52px  -34px;
+}
+.btn_wx{
+    background-position: -260px  -34px;
+    animation: btn_frames 1s ease-in-out 0s infinite ;
+    /* Firefox: */
+    -moz-animation:btn_frames 1s ease-in-out 0s infinite ;
+    /* Safari 和 Chrome: */
+    -webkit-animation: btn_frames 1s ease-in-out 0s infinite;
+    /* Opera: */
+    -o-animation: btn_frames 1s ease-in-out 0s infinite;
+}
+.btn_wx_no{
+    background-position: -104px  -34px;
+}
+.btn_hide{
+    background: url("../image/wbtPlayer/tooll.png") no-repeat;
+    width: 38px;
+    height: 47px;
+    position: absolute;
+    top: 105px;
+    
+}
+.btn_wid{
+	width:120px;
+}
+.frm_1{
+    margin-left: 50px;
+    margin-top:25px;
+}
+@-o-keyframes  btn_frames /* Opera */
+{
+    0%   {opacity:0.1;filter: alpha(opacity=10);}
+
+    100% {opacity:1;filter: alpha(opacity=100);}
+}
+@-moz-keyframes  btn_frames /* Opera */
+{
+    0%   {opacity:0.1;filter: alpha(opacity=10);}
+
+    100% {opacity:1;filter: alpha(opacity=100);}
+}
+@-webkit-keyframes btn_frames {
+     0%   {opacity:0.3;filter: alpha(opacity=30);}
+
+     100% {opacity:1;filter: alpha(opacity=100);}
+ }
+@keyframes btn_frames {
+    0%   {opacity:0.1;filter: alpha(opacity=10);}
+
+    100% {opacity:1;filter: alpha(opacity=100);}
+}
+.frm_2{
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    left: 0;
+}

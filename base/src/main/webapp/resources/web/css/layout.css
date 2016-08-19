@@ -1,0 +1,204 @@
+@font-face {
+font-family: "UnidreamLED";
+src: local("UnidreamLED"),
+local("UnidreamLED"),
+url("../font/UnidreamLED.ttf") format("truetype"),
+url("../font/UnidreamLED.svg#UnidreamLED") format("svg"),
+url("../font/UnidreamLED.ttf") format("truetype"),
+url("../font/UnidreamLED.woff") format("woff");
+}
+body,html{
+	margin: 0;
+	background: #edeff0 url("../image/bg.png") repeat-x;
+	font-size: 12px;
+    font-family: "Microsoft Yahei";
+}
+.container{
+	margin: 0 auto;
+	width: 1024px;
+	height: auto;
+}
+.top{
+	position: relative;
+	width: 1024px;
+	height: 60px;
+	
+}
+.top-title{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 280px;
+	height: 30px;
+	font-size: 14px;
+    font-family: "Microsoft Yahei";
+    text-align: left;
+    line-height: 30px;
+    color: #fff;
+}
+.red{
+	color: #cc0000;
+	font-size: 22px;
+}
+.quit{
+	position: absolute;
+	top:14px;
+	right: 5px;
+	width:80px;
+	height: 30px;
+	border: 1px solid #cc0000;
+	border-radius:2px;
+	background: #cc0000; 
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+.quit:hover{
+	position: absolute;
+	top:14px;
+	right: 5px;
+	width:80px;
+	height: 30px;
+	border: 1px solid #B22727;
+	border-radius: 2px;
+	background: #B22727; 
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+.time{
+	position: absolute;
+	top: 0px;
+	right: 100px;
+	width: 220px;
+	height: 80px;
+	background: url("../image/timemac.png") no-repeat right 5px;
+}
+.time-title{
+	position: absolute;
+	top: 20px;
+	left:0px;
+	width: 60px;
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+    color: #fff;
+}
+.time-num{
+	position: absolute;
+	top: 15px;
+	right:38px;
+	width:auto;
+    font-size: 25px;
+	font-family: "UnidreamLED";
+	color: #49b0fd;
+}
+.main{
+	position: absolute;
+	top: 70px;
+	width: 1024px;
+	height: auto;
+	margin-bottom: 10px;
+}
+.main-tab{
+	position: relative;
+	float: left;
+	width: 231px;
+	margin-top: 20px;
+	margin-left: 20px;
+	height :220px;
+    background: #fff;
+    border: 1px solid #c9c9c9;
+    -webkit-box-shadow: 0.1px 0.1px 0.1px #c9c9c9;  
+  -moz-box-shadow: 0.1px 0.1px 0.1px #c9c9c9;  
+  box-shadow:0.1px 0.1px 0.1px #c9c9c9;
+}
+.main-tabb{
+	position: relative;
+	float: left;
+	width: 231px;
+	margin-top: 20px;
+	margin-left: 20px;
+	height :220px;
+    background: #fff;
+    border: 1px solid #c9c9c9;
+    -webkit-box-shadow: 2px 2px 3px #c9c9c9;  
+  -moz-box-shadow: 2px 2px 3px #c9c9c9;  
+  box-shadow:2px 2px 3px #c9c9c9;
+}
+.main-tab-img{
+	position: absolute;
+	top: 0px;
+	width: 231px;
+	height: 150px;
+	overflow: hidden;
+}
+.main-tab-imgc{
+	position: absolute;
+	top: 0px;
+	transform-origin:center center;
+	-ms-transform-origin:center center;
+	-moz-transform-origin:center center;
+	-webkit-transform-origin:center center;
+	-o-transform-origin:center center;
+	transform:scale(1,1);
+    -webkit-transform:scale(1,1);
+    -moz-transform:scale(1,1);
+    -ms-transform:scale(1,1);
+    -o-transform:scale(1,1);
+
+}
+.main-tab-imgcc{
+	position: absolute;
+	top: 0px;
+	transform-origin:center center;
+	-ms-transform-origin:center center;
+	-moz-transform-origin:center center;
+	-webkit-transform-origin:center center;
+	-o-transform-origin:center center;
+	transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+    -ms-transform:scale(1.1,1.1);
+    -o-transform:scale(1.1,1.1);
+}
+.main-tab-title{
+	position: absolute;
+	top: 165px;
+	width: 231px;
+	height: auto;
+	font-size: 14px;
+    font-family: "Microsoft Yahei";
+    color: #14191e;
+    text-align: center;
+}
+.main-tab-con{
+	position: absolute;
+	top: 187px;
+	width: 231px;
+	height: auto;
+}
+.main-tab-goal{
+	float: left;
+	width: 100px;
+	height: auto;
+	font-size: 12px;
+    font-family: "Microsoft Yahei";
+    color: #B6BDCD;
+    text-align: left;
+    margin: 10px 5px 0px 10px;
+}
+.main-tab-point{
+	float: right;
+	width: 100px;
+	height: auto;
+	font-size: 12px;
+    font-family: "Microsoft Yahei";
+    color: #B6BDCD;
+    text-align: right;
+    margin: 10px 10px 0px 5px;
+}
+.blue{
+	color: #14191e;
+}B6BDCD
