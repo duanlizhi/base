@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fault>
+	<metadata>
+		<!--模式-->
+		<schema>XCJ</schema>
+		<schemaversion>1.0</schemaversion>
+	</metadata>
+	<name>EMU技术方案二</name>
+	<courseNumber>emu002</courseNumber>
+	<faultNumber>EMU001F002</faultNumber>
+	<type>emu</type>
+	<types>emuFault</types>
+	<!--目的-->
+	<purpose>技术方案测试</purpose>
+	<!--需求-->
+	<require>无</require>
+	<keyword>技术方案一</keyword>
+	<description>无</description>
+	<!--持续时间-->
+	<duration>10</duration>
+	<!--困难-->
+	<difficulty>1</difficulty>
+	<!--过线分数-->
+	<pass_score>60</pass_score>
+	<kp>kp001,kp002</kp>
+	<!--
+		入口 可有 可无
+	-->
+	<entry>index.html</entry>
+	<questions>
+		<question qid="q01" discription="问题1"/>
+		<question qid="q02" discription="问题2"/>
+		<question qid="q03" discription="问题3"/>
+	</questions>
+	<scores>
+		<score type="action" id="a01" rate="10" kp='kp001'/>
+		<score type="question" id="q01" rate="10" kp='kp002'/>
+	</scores>
+</fault>

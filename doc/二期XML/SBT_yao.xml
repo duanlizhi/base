@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fault>
+	<metadata>
+		<schema>XCJ</schema>
+           	<schemaversion>1.0</schemaversion>
+	</metadata>
+	<name>威朗SBT课程</name>
+	<courseNumber>SBT_VER_001</courseNumber>
+	<type>sbt</type>
+	<types>sbtCourseWare</types>
+	<purpose>通过学习本课程能够对威朗SBT课程故障进行再现，通过诊断过程培养学员针对威朗SBT课程故障的诊断思路。</purpose>
+	<require>无</require>
+	<keyword>威朗SBT课程</keyword>
+	<language>中文</language>
+	<version>V0.1</version>
+	<description>无</description>
+	<client>PC，PAD</client>
+	<entry>SBT_VER_001/index.html</entry>
+	
+	<handles>
+		<handle id="a01" discription="XXXXXXXXXXXXXXXXXXX"/>
+		<handle id="a02" discription="XXXXXXXXXXXXXXXXXXX"/>
+		<handle id="a04" discription="XXXXXXXXXXXXXXXXXXX"/>
+		<handle id="a05" discription="XXXXXXXXXXXXXXXXXXX"/>
+		<handle id="a03" discription="XXXXXXXXXXXXXXXXXXX">
+			<condition id="a03_c01" linkVID="v06"  cdt="Equals" cdtValue="V"/>
+			<condition id="a03_c02" linkVID="v07"  cdt="Equals" cdtValue="p001,p002"/>
+			<condition id="a03_c03" linkVID="v08"  cdt="Equals" cdtValue="p001,p002"/>
+			<condition id="a03_c04" linkVID="v07"  cdt="NotEquals" cdtID="v08" />
+		</handle>
+
+		<handle id="a09" discription="XXXXXXXXXXXXXXXXXXX">
+			<condition id="a09_c01" linkCID="v10" cdt="Equals" cdtValue="3.1415926" />
+			<condition id="a09_c02" linkCID="v10" cdt="Equals" cdtID="v11" />
+		</handle>
+
+		<handle id="a12" discription="XXXXXXXXXXXXXXXXXXX">
+			<condition id="a12_c01" linkCID="v11" cdt="Equals" cdtValue="0" />
+		</handle>
+	</handles>
+	
+	<values>
+		<value id="v06" discription="万用表档位" value=""/>
+		<value id="v07" discription="红表笔位置" value=""/>
+		<value id="v08" discription="黑表笔位置" value=""/>
+		<value id="v10" discription="XXXX" value="0"/>
+		<value id="v11" discription="XXXX" value="0"/>
+	</values>
+
+</fault>

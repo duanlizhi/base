@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Content Center</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/dashboard.css" rel="stylesheet">
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/highcharts.js"></script>
+	<script src="../js/exporting.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    var chart;
+    
+    $(document).ready(function () {
+		//报表1
+        $('#container').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+				height:400,
+				width:400
+            },
+            title: {
+                text: '平台学习人数'
+            },
+            tooltip: {
+        	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+			credits:{
+				 enabled:false // 禁用版权信息
+			},
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Browser share',
+                data: [
+                    ['Firefox',   45.0],
+                    ['IE',       26.8],
+                    {
+                        name: 'Chrome',
+                        y: 12.8,
+                        sliced: false,
+                        selected: false
+                    },
+                    ['Safari',    8.5],
+                    ['Opera',     6.2],
+                    ['Others',   0.7]
+                ]
+            }]
+        });
+		//报表2
+		$('#container2').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+				height:400,
+				width:400
+            },
+            title: {
+                text: '平台学习人次'
+            },
+            tooltip: {
+        	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+			credits:{
+				 enabled:false // 禁用版权信息
+			},
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Browser share',
+                data: [
+                    ['Firefox',   45.0],
+                    ['IE',       26.8],
+                    {
+                        name: 'Chrome',
+                        y: 12.8,
+                        sliced: false,
+                        selected: false
+                    },
+                    ['Safari',    8.5],
+                    ['Opera',     6.2],
+                    ['Others',   0.7]
+                ]
+            }]
+        });
+		//报表3
+		$('#container3').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+				height:400,
+				width:400
+            },
+            title: {
+                text: '课程人数'
+            },
+            tooltip: {
+        	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+			credits:{
+				 enabled:false // 禁用版权信息
+			},
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Browser share',
+                data: [
+                    ['Firefox',   45.0],
+                    ['IE',       26.8],
+                    {
+                        name: 'Chrome',
+                        y: 12.8,
+                        sliced: false,
+                        selected: false
+                    },
+                    ['Safari',    8.5],
+                    ['Opera',     6.2],
+                    ['Others',   0.7]
+                ]
+            }]
+        });
+		//报表4
+		$('#container4').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+				height:400,
+				width:400
+            },
+            title: {
+                text: '课程人次'
+            },
+            tooltip: {
+        	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+			credits:{
+				 enabled:false // 禁用版权信息
+			},
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Browser share',
+                data: [
+                    ['Firefox',   45.0],
+                    ['IE',       26.8],
+                    {
+                        name: 'Chrome',
+                        y: 12.8,
+                        sliced: false,
+                        selected: false
+                    },
+                    ['Safari',    8.5],
+                    ['Opera',     6.2],
+                    ['Others',   0.7]
+                ]
+            }]
+        });
+		
+    });//$(document).ready结束
+    
+});//$(function())结束
+		</script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid"> 
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Content Center</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">客户链接</a></li>
+            <li><a href="#">公司网址</a></li>
+            <li><a href="#">退出</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+			<select class="form-control">
+				<option>全部内容范围</option>
+				<option>WBT</option>
+				<option>SBT</option>
+				<option>拆装保养</option>
+				<option>软教具</option>
+				<option>试题</option>
+				<option>测评</option>
+				<option>其他</option>
+			</select>
+            <input type="text" class="form-control" placeholder="Search Content">
+            <button type="submit" class="btn btn-default">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="../main.html">首页</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+              <li ><a href="../domain-index.html">域管理</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+          	<li><a href="../tag/tag-index.html">标签管理</a></li>
+            <li><a href="../wbtSBT.html">课程库</a></li>
+            <li><a href="../question/question-bank-index.html">题库</a></li>
+            <li><a href="../groupTitle.html">测评库</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li   class="active"><a href="../statistics/statistics-index.html">数据统计</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li ><a href="../account/account-index.html">账号管理</a></li>
+          </ul>
+		  <ul class="nav nav-sidebar">
+            <li><a href="../knowledge-system.html">知识体系</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">近30日统计</h1>
+
+          <div class="row placeholders">
+			<!--报表1-->
+			<div class="col-xs-6 placeholder">
+			<div id="container" style="min-width: 400px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+			</div>
+			<!--报表2-->
+			<div class="col-xs-6 placeholder">
+			<div id="container2" style="min-width: 400px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+			</div>
+          </div>          
+		  <div class="row placeholders">
+			<!--报表3-->
+			<div class="col-xs-6 placeholder">
+			<div id="container3" style="min-width: 400px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+			</div>
+			<!--报表4-->
+			<div class="col-xs-6 placeholder">
+			<div id="container4" style="min-width: 400px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+			</div>
+          </div>
+		  
+          <h2 class="sub-header">数据
+			<div  class="btn-group" style="padding-left:20px;">			
+			<select class="form-control">
+				  <option selected="selected">全部平台</option>
+				  <option>培训平台</option>
+				  <option>学习平台</option>
+				  <option>拆装平台</option>
+			</select>
+			</div>
+		  </h2>
+		  
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>创建时间</th>
+                  <th>学习人数</th>
+                  <th>学习人次</th>
+				  <th>学习时长</th>
+                  <th>测评人数</th>
+                  <th>测评人次</th>
+                  <th>平均得分</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>12-17</td>
+                  <td>32</td>
+                  <td>86</td>
+                  <td>300</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>88</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fault>
+	<metadata>
+	<!--模式-->
+		<schema>XCJ</schema>
+		<schemaversion>1.0</schemaversion>
+	</metadata>
+	<name>Q12蒸发排放吹洗电磁阀故障</name>
+	<!--课件编号-->
+		<courseNumber>SBT_VER_001</courseNumber>
+	<!--故障编号-->
+	<faultNumber>SBT_VER_ES_EC_001_FAULT</faultNumber>
+	<!-- 类型sbt/wbt/emu -->
+	<type>sbt</type>
+	<!-- xml文件类型 -->
+	<types>sbtFault</types>
+	<!-- 目的 -->
+	<purpose>
+		通过学习本课程能够对Q12蒸发排放吹洗电磁阀故障进行再现，通过诊断过程培养学员针对Q12蒸发排放吹洗电磁阀故障的诊断思路。
+	</purpose>
+	<!-- 需求 -->
+	<require>无</require>
+	<!-- 关键字 -->
+	<keyword>Q12蒸发排放吹洗电磁阀</keyword>
+	<!-- 描述 -->
+	<description>无</description>
+	<!-- 持续时间 -->
+	<duration>10</duration>
+	<!-- 困难 -->
+	<difficulty>1</difficulty>
+	<!-- 过线分数 -->
+	<pass_score>60</pass_score>
+	<!-- 总得分 -->
+	<score>100</score>
+	<!-- 客户端平台 -->
+	<client>PC</client>
+	<entry>SBT_VER_001/index.html</entry>
+	<!-- 知识点维度编号 -->
+	<kp>14,15,17,18,19</kp>
+
+	<questions>
+	</questions>
+
+	<scores>
+		<score type="action" id="s01" aid="ver004" rate="1" kp="14"/>
+		<score type="action" id="s02" aid="ver005" rate="2" kp="14"/>
+		<exclusive id="s01,s02" priorityId="s02"/> 
+	</scores>
+
+
+	<progresses>
+		<progress id="a11" aid="ver068" rate="3"/>
+	</progresses>
+
+
+</fault>

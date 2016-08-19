@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courseware>
+	<name>WBT技术方案一</name>
+	<courseNumber>WBT-001</courseNumber>
+	<type>test</type>
+	<chapter id='C001' name='课前测评' url='001.html' type='test'>  
+			<page id='P001' url='001.html' is_commit='false' canBook="true" canTool="false" canFailure="true" canHistory="false"/>	
+			<page id='P002' url='002.html' is_commit='false' canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+			<page id='P003' url='003.html' is_commit='true' canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+			<page id='P004' url='004.html' is_commit='false' canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+			<page id='P005' url='005.html' is_commit='false' canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+			<page id='P006' url='006.html' is_commit='true' canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+			<page id='P007' url='007.html' is_commit='false' canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+			<page id='P008' url='008.html' is_commit='false' canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+			<page id='P009' url='009.html' is_commit='true'  canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+			<page id='P010' url='010.html' is_commit='false' canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+			<page id='P011' url='011.html' is_commit='true'  canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+			<page id='P012' url='012.html' is_commit='false' canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+			<page id='P013' url='013.html' is_commit='false' canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+			<page id='P014' url='014.html' is_commit='true' canBook="true" canTool="false" canFailure="true" canHistory="false"/>
+	</chapter>
+	<chapter id='C000' name='' url='' type='common'>  
+		<page id='P015' url='book.html' is_commit='false'/>
+		<page id='P016' url='tool.html' is_commit='false'/>
+		<page id='P017' url='failure.html' is_commit='false'/>
+		<page id='P018' url='history.html' is_commit='false'/>
+	</chapter>
+	<score>
+		<question id='Q001' pageid='P001' type='select' rate='7'/>
+		<question id='Q002' pageid='P002' type='select' rate='7'/>
+		<question id='Q003' pageid='P003' type='select' rate='7'/>
+		<question id='Q004' pageid='P004' type='select' rate='7'/>
+		<question id='Q005' pageid='P005' type='select' rate='7'/>
+		<question id='Q006' pageid='P006' type='select' rate='7'/>
+		<question id='Q007' pageid='P007' type='select' rate='7'/>
+		<question id='Q008' pageid='P008' type='select' rate='7'/>
+		<question id='Q009' pageid='P009' type='select' rate='7'/>
+		<question id='Q010' pageid='P010' type='select' rate='7'/>
+		<question id='Q011' pageid='P011' type='select' rate='7'/>
+		<question id='Q012' pageid='P012' type='select' rate='7'/>
+		<question id='Q013' pageid='P013' type='select' rate='7'/>
+		<question id='Q014' pageid='P014' type='select' rate='7'/>
+		<question id='Q015' pageid='P015' type='book' rate='1'/>
+		<question id='Q016' pageid='P016' type='tool' rate='1'/>
+		 
+	</score>
+</courseware>
+
+<!--type='test' 表示本章节内容是测评__>
+<!__isBack='false' 表示本节内容不可以后退__>
+<!__   chapter__page__next 进行下一页的判断标准 isRight  isSelectded   __>
+<!__ is_commit='false' 表示本页面不向服务器提交数据 true 表示要提交数据__>
+<!__chapter__page__canForm 表单按钮是否出现，true 或者 false__>
+<!__form_url的实现方式__>
+<!__chapter__page__canBook 手册按钮是否出现，true 或者 false__>
+<!__chapter__page__canTool 工具按钮是否出现，true 或者 false__>
+<!__chapter__page__canFailure 故障现象按钮是否出现，true 或者 false__>
+<!__chapter__page__canHistory 故障历史按钮是否出现，true 或者 false-->

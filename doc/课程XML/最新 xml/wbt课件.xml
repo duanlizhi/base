@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<courseware>
+		<metadata>
+		<schema>XCJ</schema>
+		<schemaversion>1.0</schemaversion>
+	</metadata>
+	<name>WBT技术方案一</name>
+	<courseNumber>wbt0012</courseNumber>
+	<type>wbt</type>
+	<types>wbtCourseWare</types>
+	<purpose>技术方案测试</purpose>
+	<require>无</require>
+	<keyword>技术方案一</keyword>
+	<language>中文</language>
+	<version>V0.1</version>
+	<description>无</description>
+	<client>PC，PAD</client>
+	<entry>index.html</entry>
+	<duration>10</duration>
+	<difficulty>1</difficulty>
+	<pass_score>60</pass_score>
+	<kp>kp001,kp002</kp>
+	<chapter id='P002' name='客户陈述' url='002.html' type='test'> 
+			<page id='P002' url='002.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P003' url='003.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P004' url='004.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P005' url='005.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+	</chapter>
+	<chapter id='P006' name='症状确认' url='006.html' type='test'>  
+			<page id='P006' url='006.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P007' url='007.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P008' url='008.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P009' url='009.html' is_commit='true'  canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+	</chapter>
+	<chapter id='P010' name='初步检查' url='010.html' type='test'>  
+			<page id='P010' url='010.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P011' url='011.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P012' url='012.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P013' url='013.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P014' url='014.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P015' url='015.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P016' url='016.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+	</chapter>
+	<chapter id='P017' name='故障分析' url='017.html' type='test'> 
+			<page id='P017' url='017.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P018' url='018.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P019' url='019.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P020' url='020.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P021' url='021.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P022' url='022.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P023' url='023.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P024' url='024.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P025' url='025.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P026' url='026.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/> 
+			<page id='P027' url='027.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P028' url='028.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P029' url='029.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P030' url='030.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P031' url='031.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P032' url='032.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P033' url='033.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P034' url='034.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P035' url='035.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P036' url='036.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P037' url='037.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P038' url='038.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+	</chapter>
+	<chapter id='P039' name='视觉检查' url='039.html' type='test'>
+			<page id='P039' url='039.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P040' url='040.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P041' url='041.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P042' url='042.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+	</chapter>
+	<chapter id='P043' name='故障诊断' url='043.html' type='test'> 
+			<page id='P043' url='043.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P044' url='044.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P045' url='045.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P046' url='046.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P047' url='047.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P048' url='048.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P049' url='049.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P050' url='050.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P051' url='051.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P052' url='052.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P053' url='053.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P054' url='054.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P055' url='055.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P056' url='056.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+	</chapter>
+	<chapter id='P057' name='故障维修' url='057.html' type='test'>
+			<page id='P057' url='057.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P058' url='058.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P059' url='059.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+	</chapter>
+	<chapter id='P060' name='修复确认' url='060.html' type='test'>
+			<page id='P060' url='060.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P061' url='061.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P062' url='062.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P063' url='063.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P064' url='064.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P065' url='065.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+	</chapter>
+	<chapter id='P066' name='测评' url='066.html' type='test'> 
+			<page id='P066' url='066.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P067' url='067.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P068' url='068.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P069' url='069.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P070' url='070.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P071' url='071.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P072' url='072.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+			<page id='P073' url='072.html' is_commit='false' canBook='false' canTool='true' canFailure='true' canHistory='true'/>
+	</chapter>
+	<menu id='P015' name='' url='' type='common'>  
+		<page id='P016' style='tool-big-b' name='维修资料' url='toolsaa' is_commit='false'/>
+		<page id='P017' style='tool-big-c' name='维修历史' url='failuresaa' is_commit='false'/>
+		<page id='P018' style='tool-big-d' name='维修工具' url='historysaa' is_commit='false'/>
+	</menu>
+	<score>
+		<question id='Q001' pageid='066' type='select' rate='7'/>
+		<question id='Q002' pageid='067' type='select' rate='7'/>
+		<question id='Q003' pageid='068' type='select' rate='7'/>
+		<question id='Q004' pageid='069' type='select' rate='7'/>
+		<question id='Q005' pageid='070' type='select' rate='7'/>
+	</score>
+</courseware>
+

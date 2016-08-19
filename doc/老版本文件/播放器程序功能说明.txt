@@ -1,0 +1,28 @@
+播放器 控制参数如下：
+　　　student_id：学员ID	从服务器获得
+　　　student_name：学员姓名	从服务器获得
+　　　Course_number：课程编号		从服务器获得
+　　　Lesson_location：课程学习信息字符串	从服务器获得后播放器维护
+　　　Lesson_status：学习状态：通过pass，失败fail，完成complete，学习中learning，未开始 not start	从服务器获得后播放器维护
+　　　Entry：入口	从服务器获得
+　　　Progress：进度	从服务器获得后播放器维护	
+　　　Raw_score：得分	从服务器获得后播放器维护
+　　　Max_score：最高得分	从服务器获得后播放器维护
+　　　Min_score：最低得分	从服务器获得后播放器维护
+　　　Mastery_score：通过得分		从服务器获得后播放器维护
+　　　Session_time：本次学习时间	播放器维护
+1 平台申请开始学习调用服务器/oper/course/initStudy，获得sessionId、token
+2 平台打开播放器，由播放器调用服务器/oper/course/wbtStart，获得学员上次学习课程的数据和课程内容xml
+3 xml文件中规定观看那些页面是否向服务器提交数据/oper/course/wbtCommit，如果2分钟没有提交数据，播放器自动提交。
+4 播放器退出的时候调用/oper/course/wbtExit
+
+
+
+
+学习状态：通过pass 状态 通过得分来判断是否通过。 完成也是通过
+
+
+  学习中
+
+
+

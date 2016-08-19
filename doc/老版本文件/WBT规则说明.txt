@@ -1,0 +1,20 @@
+name 表示课件名称
+courseNember 表示课件编号
+type 表示该课件是测评用还是教学用，通过该参数决定播放器风格、控制逻辑。test 或者 study
+chapter--id 章节编号
+chapter--name 章节名称
+chapter--url 章节入口页面
+chapter--page--id 页面编号
+chapter--page--url 页面名称，相对路径
+chapter--page--type 页面类型，test 或者 study
+chapter--page--commit 浏览该页面时是否向服务器提交数据，true 或者 false
+chapter--page--next 进行下一页的判断标准  isRight  isSelectded
+chapter--page--canForm 表单按钮是否出现，true 或者 false
+chapter--page--canBook 手册按钮是否出现，true 或者 false
+chapter--page--canTool 工具按钮是否出现，true 或者 false
+chapter--page--canFailure 故障现象按钮是否出现，true 或者 false
+chapter--page--canHistory 故障历史按钮是否出现，true 或者 false
+score--question--id 试题编号，
+score--question--pageid 试题编号，
+score--question--type 试题类型，
+score--question--rate 所占正确率比例

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<course>
+	<metadata>
+		<schema>XCJ</schema>
+		<schemaversion>1.0</schemaversion>
+	</metadata>
+	<name>WBT技术方案一</name>
+	<courseNumber>wbt001</courseNumber>
+	<type>test</type>
+	<purpose>技术方案测试</purpose>
+	<require>无</require>
+	<keyword>技术方案一</keyword>
+	<language>中文</language>
+	<version>V0.1</version>
+	<description>无</description>
+	<client>PC，PAD</client>
+	<entry>index.html</entry>
+	<duration>10</duration>
+	<difficulty>简单</difficulty>
+	<pass_score>60</pass_score>
+	<kp>kp001,kp002</kp>
+	<actions>
+		<action id='a01' discription='拆下油门踏板'/>
+		<action id='a02' discription='安装油门踏板'/>
+		<action id='a03' discription='点火钥匙旋转至LOCK'/>
+		<action id='a04' discription='点火钥匙旋转至ACC'/>
+		<action id='a05' discription='点火钥匙旋转至ON'/>
+		<action id='a06' discription='点火钥匙旋转至START'/>
+	</actions>
+	<parts>
+		<part id='p01'/><state id="p01s01" discription="已安装"/><state id="p01s02" discription="已拆卸"/>
+		<part id='p02'/><state id="p02s01" discription="已安装"/><state id="p02s02" discription="已拆卸"/>
+		<part id='p03'/><state id="p03s01" discription="已安装"/><state id="p03s02" discription="已拆卸"/>
+	</parts>
+	<tools>
+		<tool id='t01'/><state id="t01s01" discription="使用中"/><state id="t01s02" discription="未使用"/>
+		<tool id='t02'/><state id="t02s01" discription="使用中"/><state id="t02s02" discription="未使用"/>
+		<tool id='t03'/><state id="t03s01" discription="使用中"/><state id="t03s02" discription="未使用"/>
+	</tools>
+	<questions>
+		<question qid="q01" discription="问题1"/>
+		<question qid="q02" discription="问题2"/>
+		<question qid="q03" discription="问题3"><answer id="q03a00" discription="正确"/><answer id="q03a01" discription="工具选择错误"/><answer id="q03a02" discription="部件选择错误"/></question>
+	</questions>
+	<scores>
+		<score type="action" id="a01" rate="10" kp='kp001'/>
+		<score type="question" id="q01" rate="10" kp='kp002'/>
+	</scores>
+</course>

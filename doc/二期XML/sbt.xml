@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fault>
+	<metadata>
+		<schema>XCJ</schema>
+           	<schemaversion>1.0</schemaversion>
+	</metadata>
+	<name>诊断碳罐电磁阀故障</name>
+	<courseNumber>SBT_FCO_ES</courseNumber>
+	<type>sbt</type>
+	<types>sbtCourseWare</types>
+	<purpose>通过学习本课程能够对碳罐电磁阀故障进行再现，通过诊断过程培养学员针对碳罐电磁阀故障的诊断思路。</purpose>
+	<require>无</require>
+	<keyword>诊断碳罐电磁阀故障</keyword>
+	<language>中文</language>
+	<version>V0.1</version>
+	<description>无</description>
+	<client>PC，PAD</client>
+	<sumScore>100</sumScore>
+	<passCondition>60</passCondition>
+	<completeCondition>60</completeCondition>
+	<entry>SBT_FCO_ES_ES_007/index.html</entry>
+	<handles>
+		<!--故障修复前的操作-->
+		<handle id="score001" discription="起动车辆"/> 
+		<handle id="score002" discription="故障修复前，读取故障码"/>
+		<handle id="score003" discription="故障修复前，读取数据流">	
+			<condition id="a03_c01" linkVID="v06"  cdt="Equals" cdtValue="V"/>
+			<condition id="a03_c02" linkVID="v07"  cdt="Equals" cdtValue="p001,p002"/>
+			<condition id="a03_c03" linkVID="v08"  cdt="Equals" cdtValue="p001,p002"/>
+			<condition id="a03_c04" linkVID="v07"  cdt="NotEquals" cdtID="v08" />
+		</handle>
+	</handles>
+	<values>
+		<value id="v06" discription="万用表档位" value=""/>
+		<value id="v07" discription="红表笔位置" value=""/>
+		<value id="v08" discription="黑表笔位置" value=""/>
+		<value id="v10" discription="XXXX" value="0"/>
+		<value id="v11" discription="XXXX" value="0"/>
+	</values>
+	<progresses>
+		<progress id="a11" hid="ver068" rate="3"/>
+	</progresses>
+</fault>

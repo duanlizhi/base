@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fault>
+	<metadata>
+		<schema>XCJ</schema>
+		<schemaversion>1.0</schemaversion>
+	</metadata>
+	<name>EMU技术方案一</name>
+	<courseNumber>emu003</courseNumber>
+	<!-- 当前xml的所属类型 -->
+	<type>emu</type>
+	<!-- 当前xml的所属类型的子类型，比如：emu当中的课件、emu中的故障 -->
+	<types>emuCourseWare</types>
+	<!--目的-->
+	<purpose>技术方案测试</purpose>
+	<!--需求-->
+	<require>无</require>
+	<keyword>技术方案一</keyword>
+	<language>中文</language>
+	<version>V0.1</version>
+	<description>无</description>
+	<client>PC，PAD</client>
+	<entry>index.html</entry>
+	<actions>
+		<action id='a01' discription='拆下油门踏板'/>
+		<action id='a02' discription='安装油门踏板'/>
+		<action id='a03' discription='点火钥匙旋转至LOCK'/>
+		<action id='a04' discription='点火钥匙旋转至ACC'/>
+		<action id='a05' discription='点火钥匙旋转至ON'/>
+		<action id='a06' discription='点火钥匙旋转至START'/>
+	</actions>
+	<parts>
+		<part id='p01'>
+			<state id="p01s01" discription="已安装"/>
+			<state id="p01s02" discription="已拆卸"/>
+		</part>
+		<part id='p02'>
+			<state id="p02s01" discription="已安装"/>
+			<state id="p02s02" discription="已拆卸"/>
+		</part>
+		<part id='p03'>
+			<state id="p03s01" discription="已安装"/>
+			<state id="p03s02" discription="已拆卸"/>
+		</part>
+	</parts>
+	<tools>
+		<tool id='t01'>
+			<state id="t01s01" discription="使用中"/>
+			<state id="t01s02" discription="未使用"/>
+		</tool>
+		<tool id='t02'>
+			<state id="t02s01" discription="使用中"/>
+			<state id="t02s02" discription="未使用"/>
+		</tool>
+		<tool id='t03'>
+			<state id="t03s01" discription="使用中"/>
+			<state id="t03s02" discription="未使用"/>
+		</tool>
+	</tools>
+ 
+</fault>

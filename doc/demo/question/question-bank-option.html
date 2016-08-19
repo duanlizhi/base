@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Content Center</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/dashboard.css" rel="stylesheet">
+    <script src="../js/jquery-2.1.3.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<style>
+		th,td{
+		  text-align:center;
+		}
+	</style>
+	<script type="text/javascript">
+    function login(){
+    	location.href="main.html";
+    }
+    
+    function loginFailed(){
+    	$("#userNameDiv").addClass("has-success");
+    	$("#userNameSpan").addClass("glyphicon-ok");
+    	$("#passwordDiv").addClass("has-error");
+    	$("#passwordSpan").addClass("glyphicon-remove");
+    }
+    
+    function initModal(){
+    	$("#userNameDiv").removeClass("has-success");
+    	$("#userNameSpan").removeClass("glyphicon-ok");
+    	$("#passwordDiv").removeClass("has-error");
+    	$("#passwordSpan").removeClass("glyphicon-remove");
+    }
+	
+    function particulars(){
+	
+	}
+	
+    $(document).ready(function() {
+    	$("#userNameDiv").css('text-align','left');
+    	$("#userNameDiv").css('color','#000000');
+    	$("#passwordDiv").css('text-align','left');
+    	$("#passwordDiv").css('color','#000000');
+    });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Content Center</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">客户链接</a></li>
+            <li><a href="#">公司网址</a></li>
+            <li><a href="#">退出</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+			<select class="form-control">
+				<option>全部内容范围</option>
+				<option>WBT</option>
+				<option>SBT</option>
+				<option>拆装保养</option>
+				<option>软教具</option>
+				<option>试题</option>
+				<option>测评</option>
+				<option>其他</option>
+			</select>
+            <input type="text" class="form-control" placeholder="Search Content">
+            <button type="submit" class="btn btn-default">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="../main.html">首页</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+              <li ><a href="../domain-index.html">域管理</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+          	<li><a href="../tag/tag-index.html">标签管理</a></li>
+            <li><a href="../wbtSBT.html">课程库</a></li>
+            <li  class="active"><a href="question-bank-index.html">题库</a></li>
+            <li><a href="../groupTitle.html">测评库</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="../statistics/statistics-index.html">数据统计</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="../account/account-index.html">账号管理</a></li>
+          </ul>
+		  <ul class="nav nav-sidebar">
+            <li><a href="../knowledge-system.html">知识体系</a></li>
+          </ul>
+        </div>
+				
+		<!--新曾窗口开始-->
+		<div class="modal fade bs-example-modal-sm" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">
+							新增选择题(正确答案请勾选)
+						</h4>
+					</div>
+					<div class="modal-body">
+						<div id="userNameDiv" class="form-group has-feedback">
+						  <label class="control-label" for="userName">问题名称：</label>
+						  <input type="text" class="form-control" id="userName" placeholder="请输入名称">
+						  <span id="userNameSpan" class="glyphicon form-control-feedback"></span>
+						</div>
+						<div id="userNameDiv" class="form-group has-feedback">
+						  <label class="control-label" for="userName">难度系数: </label>
+						  <div  class="btn-group">			
+							<select class="form-control">
+								<option selected="selected">1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						  </div>
+						  <label class="control-label" for="userName">问题编号: </label>
+						  <div  class="btn-group">
+							<input type="text" class="form-control" id="userName" placeholder="请输入问题编号">
+						  </div>
+						  <span id="userNameSpan" class="glyphicon form-control-feedback"></span>
+						</div>
+						<div id="userNameDiv" class="form-group has-feedback">
+						  <label class="control-label" for="userName">标签: </label>
+						  <div  class="btn-group">			
+							<input type="checkbox">标签1
+							<input type="checkbox">标签2
+							<input type="checkbox">标签3
+							<input type="checkbox">标签4
+							<input type="checkbox">标签5
+						  </div>
+						</div>
+						<div id="passwordDiv" class="form-group has-feedback">
+						  <label class="control-label" for="password">答案1：
+							<input type="checkbox" name="optionCheckbox"> 
+						  </label>
+						  <input type="text" class="form-control" id="password" placeholder="请输入答案1">
+						  <span id="passwordSpan" class="glyphicon form-control-feedback"></span>
+						</div>
+						<div id="passwordDiv" class="form-group has-feedback">
+						  <label class="control-label" for="password">答案2：
+							<input type="checkbox" name="optionCheckbox"> 
+						  </label>
+						  <input type="text" class="form-control" id="password" placeholder="请输入答案2">
+						  <span id="passwordSpan" class="glyphicon form-control-feedback"></span>
+						</div>
+						<div id="passwordDiv" class="form-group has-feedback">
+						  <label class="control-label" for="password">答案3：
+							<input type="checkbox" name="optionCheckbox"> 
+						  </label>
+						  <input type="text" class="form-control" id="password" placeholder="请输入答案3">
+						  <span id="passwordSpan" class="glyphicon form-control-feedback"></span>
+						</div>
+						<div id="passwordDiv" class="form-group has-feedback">
+						  <label class="control-label" for="password">答案4：
+							<input type="checkbox" name="optionCheckbox"> 
+						  </label>
+						  <input type="text" class="form-control" id="password" placeholder="请输入答案4">
+						  <span id="passwordSpan" class="glyphicon form-control-feedback"></span>
+						</div>
+						<div id="passwordDiv" class="form-group has-feedback">
+						  <label class="control-label" for="password">答案5：
+							<input type="checkbox" name="optionCheckbox"> 
+						  </label>
+						  <input type="text" class="form-control" id="password" placeholder="请输入答案5">
+						  <span id="passwordSpan" class="glyphicon form-control-feedback"></span>
+						</div>
+						<div id="passwordDiv" class="form-group has-feedback">
+						  <label class="control-label" for="password">答案6：
+							<input type="checkbox" name="optionCheckbox"> 
+						  </label>
+						  <input type="text" class="form-control" id="password" placeholder="请输入答案6">
+						  <span id="passwordSpan" class="glyphicon form-control-feedback"></span>
+						</div>
+
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							关闭
+						</button>
+						<button type="button" class="btn btn-primary">
+							提交
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--新曾窗口结束-->		
+		
+		<!--详情窗口开始-->
+		<div class="modal fade bs-example-modal-sm" id="particularsModal" tabindex="-1" role="dialog" aria-labelledby="particularsModal" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">
+							选择题详情
+						</h4>
+					</div>
+					<div class="modal-body">
+						<div id="userNameDiv" class="form-group has-feedback">
+						  <label class="control-label" for="userName">问题名称：</label>
+						  现有的鸡还是现有的蛋呢
+						  <span id="userNameSpan" class="glyphicon form-control-feedback"></span>
+						</div>
+						<div id="passwordDiv" class="form-group has-feedback">
+						  <label class="control-label" for="password">答案1：<span>【正确】</span></label>
+						  先有的鸡
+						  <span id="passwordSpan" class="glyphicon form-control-feedback"></span>
+						</div>
+						<div id="passwordDiv" class="form-group has-feedback">
+						  <label class="control-label" for="password">答案2：<span>【错误】</span></label>
+						  先有的蛋
+						  <span id="passwordSpan" class="glyphicon form-control-feedback"></span>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							关闭
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--详情窗口结束-->
+				
+		
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <div class="row">
+          	<ol class="breadcrumb">
+  				<li><a href="../main.html">首页</a></li>
+  				<li class="active">选择题</li>
+			</ol>
+		  </div>
+		  <div class="btn-toolbar" role="toolbar">
+		  	<div class="btn-group">
+		  		<!--<button type="button" class="btn btn-info" onclick="window.location.href='./question-bank-save.html'">新增</button>-->
+		  		<button type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModal" onclick="initModal()">新增</button>
+		  		<button type="button" class="btn btn-info">删除</button>
+				<button type="button" class="btn btn-primary" onclick="window.location.href='./question-bank-index.html'">题组部分</button>
+				<!--
+		  		<button type="button" class="btn btn-info">选择题部分</button>
+				-->
+				 
+		  	</div>
+			
+			<div  class="btn-group" style="float:right;padding-right:60px;">
+		  	 <input class="form-control" value="xx" name="inname" type="text" value="" placeholder="请输入搜索关键字" style="background:#fff"/>      
+					<input  name="accateid" type="hidden" id="accateid" value=""/>
+					<button type="button" class="btn btn-info" 
+					style="position:absolute;right:0px;top:0px;">搜索</button> 
+		  	</div>
+		  	 <!-- 
+			 <div class="btn-group">
+		  		<button type="button" class="btn btn-primary">启用</button>
+		  		<button type="button" class="btn btn-primary">禁用</button>
+		  	</div>
+			
+					
+			 -->
+		  </div>
+		     
+			 
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+				  <th><input type="checkbox"></th>
+                  <th>序号</th>
+				  <th>编号</th>
+				  <th>难度系数</th>
+				  <th>所属标签</th>
+                  <th>名称</th>
+                  <th>创建时间</th>
+                  <th>修改时间</th>
+                  <th>状态</th>
+				   <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+				  <td><input type="checkbox"></td>
+                  <td>1</td>
+				  <td>10001</td>
+				  <td>5</td>
+                  <td>java</td>
+                  <td style="text-align:left;"><span class="bg-success">XZ</span>爱你就像大风往北吹是多少。。。</td>
+                  <td>15-01-01</td>
+                  <td>15-01-01</td>
+                  <td>禁用</td>
+				  <td>
+				  <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#loginModal" onclick="initModal()">编辑</button>&nbsp;
+				  <button type="button" class="btn btn-primary btn-xs">禁用</button>&nbsp;
+				  <button type="button" class="btn btn-info btn-xs" onclick="initModal()"  data-toggle="modal" data-target="#particularsModal">详情</button>&nbsp;
+				  </td>
+                </tr>
+				<tr>
+				  <td><input type="checkbox"></td>
+                  <td>2</td>
+				  <td>10002</td>
+				  <td>4</td>
+                  <td>sql</td>
+                  <td style="text-align:left;"><span class="bg-info">XZ</span>爱你就像大风往北吹</td>
+                  <td>15-01-01</td>
+                  <td>15-01-01</td>
+                  <td>可用</td>
+				  <td>
+				  <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#loginModal" onclick="initModal()">编辑</button>&nbsp;
+				  <button type="button" class="btn btn-primary btn-xs">禁用</button>&nbsp;
+				  <button type="button" class="btn btn-info btn-xs" onclick="initModal()"  data-toggle="modal" data-target="#particularsModal">详情</button>&nbsp;
+				  </td>
+                </tr>
+				<tr>
+				  <td><input type="checkbox"></td>
+                  <td>3</td>
+				  <td>10003</td>
+				  <td>1</td>
+                  <td>html</td>
+                  <td style="text-align:left;"><span class="bg-success">XZ</span>爱你就像大风往北吹</td>
+                  <td>15-01-01</td>
+                  <td>15-01-01</td>
+                  <td>可用</td>
+				  <td>
+				  <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#loginModal" onclick="initModal()">编辑</button>&nbsp;
+				  <button type="button" class="btn btn-primary btn-xs">禁用</button>&nbsp;
+				  <button type="button" class="btn btn-info btn-xs" onclick="initModal()"  data-toggle="modal" data-target="#particularsModal">详情</button>&nbsp;
+				  </td>
+                </tr>
+				
+				
+				
+				<tr>
+				 <table class="table table-striped">
+	<style type="text/css">
+.pagination {
+	padding: 5px;
+	float: right;
+	font-size: 12px;
+}
+
+.pagination a,.pagination a:link,.pagination a:visited {
+	padding: 2px 5px;
+	margin: 2px;
+	border: 1px solid #428bca;
+	text-decoration: none;
+	color: #006699;
+}
+
+.pagination a:hover,.pagination a:active {
+	border: 1px solid #428bca;
+	color: #000;
+	text-decoration: none;
+}
+
+.pagination span.current {
+	padding: 2px 5px;
+	margin: 2px;
+	border: 1px solid #428bca;
+	font-weight: bold;
+	background-color: #428bca;
+	color: #FFF;
+}
+
+.pagination span.disabled {
+	padding: 2px 5px;
+	margin: 2px;
+	border: 1px solid #428bca;
+	color: #ddd;
+}
+</style>
+	<div class="pagination">
+		<form method="post" action="./articleList" name="qPagerForm">
+			<input type="hidden" name="currentPage" value="1" />
+			&nbsp;共
+			<strong>897</strong>项,
+			<strong>113</strong>页:&nbsp;
+			<span class="disabled">&laquo;&nbsp;上一页</span>
+			<span class="current">1</span>
+			<a href="javascript:turnOverPage(2)">2</a> &hellip;
+			<a href="javascript:turnOverPage(112)">112</a>
+			<a href="javascript:turnOverPage(113)">113</a>
+			<a href="javascript:turnOverPage(2)">下一页&nbsp;&raquo;</a>
+		</form>
+		<script language="javascript">
+function turnOverPage(no) {
+	if (no > 113) {
+		no = 113;
+	}
+	if (no < 1) {
+		no = 1;
+	}
+	document.qPagerForm.currentPage.value = no;
+	document.qPagerForm.submit();
+}
+</script>
+	</div>
+
+
+</table>
+				</tr>
+              </tbody>
+            </table>
+ 
+   
+								
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

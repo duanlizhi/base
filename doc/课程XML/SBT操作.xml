@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courseware>
+	<info>
+		<name>发动机检测</name>
+		<courseNumber>SBT001</courseNumber>
+		<type>SBT</type><!--SBT、拆装、保养-->
+	</info>
+	<parts>
+		<part id='p01' name='油门踏板'>
+			<status id='p01-01' name='已拆下'></status>
+			<status id='p01-02' name='已安装'></status>
+		</part>
+		<part id='p02' name='点火开关'>
+			<status id='p02-01' name='Key_LOCK'></status>
+			<status id='p02-02' name='Key_ACC'></status>
+			<status id='p02-03' name='Key_ON'></status>
+			<status id='p02-04' name='Key_START'></status>
+		</part>
+        <part id='p03' name='档位'>
+			<status id='p03-00' name='档-N'></status>
+            <status id='p03-01' name='档-1'></status>
+            <status id='p03-02' name='档-2'></status>
+            <status id='p03-03' name='档-3'></status>
+            <status id='p03-04' name='档-4'></status>
+            <status id='p03-05' name='档-5'></status>
+            <status id='p03-06' name='档-6'></status>
+		</part>
+        <part id='p04' name='组合仪表'>
+			<status id='p04-00' name='故障灯'></status>
+		</part>
+	</parts>
+	<tools>
+		<tool id='t01' name='万用表'>
+			<status id='t01-00' name='关闭'></status>
+			<status id='t01-01' name='打开'></status>
+			<status id='t01-02' name='保持健'></status>
+			<status id='t01-03' name='hFE档位'></status>
+            <status id='t01-04' name='200mV电压档'></status>
+            <status id='t01-05' name='2V电压档'></status>
+            <status id='t01-06' name='20V电压档'></status>
+            <status id='t01-07' name='200V电压档'></status>
+            <status id='t01-08' name='1000V电压档'></status>
+            <status id='t01-09' name='200欧姆档'></status>
+            <status id='t01-10' name='2K欧姆档'></status>
+            <status id='t01-11' name='20K欧姆档'></status>
+            <status id='t01-12' name='200K欧姆档'></status>
+            <status id='t01-13' name='2M欧姆档'></status>
+            <status id='t01-14' name='200M欧姆档'></status>
+            <status id='t01-15' name='通断档'></status>
+            <status id='t01-16' name='2mirA电流档'></status>
+            <status id='t01-17' name='20mirA电流档'></status>
+            <status id='t01-18' name='200mirA电流档'></status>
+            <status id='t01-19' name='2mA电流档'></status>
+            <status id='t01-20' name='20mA电流档'></status>
+            <status id='t01-21' name='200mA电流档'></status>
+            <status id='t01-22' name='10A电流档'></status>
+            <status id='t01-23' name='2V交流电压档'></status>
+            <status id='t01-24' name='20V交流电压档'></status>
+            <status id='t01-25' name='200V交流电压档'></status>
+            <status id='t01-26' name='750V交流电压档'></status>
+            <status id='t01-27' name='200mirA交流电流档'></status>
+            <status id='t01-28' name='2mA交流电流档'></status>
+            <status id='t01-29' name='200mA交流电流档'></status>
+            <status id='t01-30' name='10A交流电流档'></status>
+            <status id='t01-31' name='电压欧姆测孔'></status>
+            <status id='t01-32' name='毫安测孔'></status>
+            <status id='t01-33' name='安培测孔'></status>
+            <status id='t01-34' name='COM孔'></status>
+		</tool>
+		<tool id='t02' name='检测仪'>
+			<status id='t02-00' name='关闭'></status>
+			<status id='t02-01' name='故障诊断'></status>
+            <status id='t02-02' name='示波分析'></status>
+            <status id='t02-03' name='辅助功能'></status>
+            <status id='t02-04' name='返回'></status>
+            <status id='t02-05' name='缩放'></status>
+            <status id='t02-06' name='发动机和ECT'></status>
+            <status id='t02-07' name='ABS/VSC/TRC'></status>
+            <status id='t02-08' name='空调'></status>
+            <status id='t02-09' name='EPS'></status>
+            <status id='t02-10' name='防盗停机器'></status>
+            <status id='t02-11' name='SRS空气囊'></status>
+            <status id='t02-12' name='驾驶员门马达'></status>
+            <status id='t02-13' name='滑动天窗'></status>
+            <status id='t02-14' name='组合仪表'></status>
+            <status id='t02-15' name='当前故障码'></status>
+            <status id='t02-16' name='历史故障码'></status>
+            <status id='t02-17' name='清除故障码'></status>
+            <status id='t02-18' name='读取数据流'></status>
+            <status id='t02-19' name='动作测试'></status>
+            <status id='t02-20' name='工具'></status>
+            <status id='t02-21' name='记录'></status>
+            <status id='t02-22' name=''></status>
+            <status id='t02-23' name=''></status>
+            <status id='t02-24' name=''></status>
+            <status id='t02-25' name=''></status>
+            <status id='t02-26' name=''></status>
+            <status id='t02-27' name=''></status>
+            <status id='t02-28' name=''></status>
+            <status id='t02-29' name=''></status>
+            <status id='t02-30' name=''></status>
+            <status id='t02-31' name=''></status>
+            <status id='t02-32' name=''></status>
+            <status id='t02-33' name=''></status>
+            <status id='t02-34' name=''></status>
+		</tool>
+		<tool id='t03' name='螺丝刀'>
+			<status id='t03-00' name='关闭'></status>
+			<status id='t03-01' name='使用中'></status>
+		</tool>
+        <tool id='t04' name='钳子'>
+			<status id='t04-00' name='关闭'></status>
+			<status id='t04-01' name='使用中'></status>
+		</tool>
+	</tools>
+	<actions>
+		<action id='a01' discription='拆下油门踏板'/>
+		<action id='a02' discription='安装油门踏板'/>
+		<action id='a03' discription='点火钥匙旋转至LOCK'/>
+		<action id='a04' discription='点火钥匙旋转至ACC'/>
+		<action id='a05' discription='点火钥匙旋转至ON'/>
+		<action id='a06' discription='点火钥匙旋转至START'/>
+        <action id='a07' discription='万用表测量某两个点'>
+			<status id='a07-01' name='VPA-EPA之间'></status>
+			<status id='a07-02' name='VPA-EPA2之间'></status>
+			<status id='a07-03' name='VPA-VCPA之间'></status>
+			<status id='a07-04' name='VPA-VPA2之间'></status>
+			<status id='a07-05' name='VPA-VCP2之间'></status>
+			<status id='a07-06' name='VCPA-EPA之间'></status>
+			<status id='a07-07' name='VCPA-EPA2之间'></status>
+			<status id='a07-08' name='VCPA-VPA2之间'></status>
+			<status id='a07-09' name='VCPA-VCP2之间'></status>
+			<status id='a07-10' name='VPA2-EPA2之间'></status>
+			<status id='a07-11' name='VPA2-EPA之间'></status>
+			<status id='a07-12' name='VPA2-VCP2之间'></status>
+			<status id='a07-13' name='VCP2-EPA2之间'></status>
+			<status id='a07-14' name='VCP2-EPA之间'></status>
+			<status id='a07-15' name='EPA-EPA2之间'></status>
+			<status id='a07-16' name='VCPA-ECM57PIN'></status>
+			<status id='a07-17' name='VPA-ECM55PIN'></status>
+			<status id='a07-18' name='EPA-ECM59PIN'></status>
+			<status id='a07-19' name='VCP2-ECM58PIN'></status>
+			<status id='a07-20' name='VPA2-ECM56PIN'></status>
+			<status id='a07-21' name='EPA2-ECM60PIN'></status>
+        </action>
+	</actions>
+	<score>
+		<question id='Q001' scoreId='S001' type='select' rate='7'/>
+		<question id='Q002' scoreId='S002' type='select' rate='7'/>
+		<question id='Q003' scoreId='S003' type='select' rate='7'/>
+		<question id='Q004' scoreId='S004' type='select' rate='7'/>
+		<question id='Q005' scoreId='S005' type='select' rate='7'/>
+		<question id='Q006' scoreId='S006' type='select' rate='7'/>
+		<question id='Q007' scoreId='S007' type='select' rate='7'/>
+		<question id='Q008' scoreId='S008' type='select' rate='7'/>
+		<question id='Q009' scoreId='S009' type='select' rate='7'/>
+		<question id='Q010' scoreId='S010' type='select' rate='7'/>
+		<question id='Q011' scoreId='S011' type='select' rate='7'/>
+		<question id='Q012' scoreId='S012' type='select' rate='7'/>
+		<question id='Q013' scoreId='S013' type='select' rate='7'/>
+		<question id='Q014' scoreId='S014' type='select' rate='7'/>
+		<question id='Q015' scoreId='S015' type='book' rate='1'/>
+		<question id='Q016' scoreId='S016' type='tool' rate='1'/>
+	</score>
+ 
+</courseware>

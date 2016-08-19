@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="XCJ-WBT-001">
+	<metadata>
+		<schema>XCJ</schema>
+		<schemaversion>1.0</schemaversion>
+	</metadata>
+	<title>WBT测试方案一</title>
+	<courseNumber>WBT001</courseNumber>
+	<purpose>技术方案测试</purpose>
+	<require>无</require>
+	<keyword>技术方案一</keyword>
+	<language>中文</language>
+	<version>V0.1</version>
+	<description>无</description>
+	<client>PC，PAD</client>
+	<entry>index.html</entry>
+	<duration>10</duration>
+	<difficulty>简单</difficulty>
+	<pass_score>60</pass_score>
+</manifest>

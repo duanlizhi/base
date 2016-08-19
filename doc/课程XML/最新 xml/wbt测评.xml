@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<courseware>
+	<metadata>
+		<schema>XCJ</schema>
+		<schemaversion>1.0</schemaversion>
+	</metadata>
+	<name>WBT技术方案一</name>
+	<courseNumber>wbt001</courseNumber>
+	<type>wbt</type>
+	<types>wbtTests</types>
+	<purpose>技术方案测试</purpose>
+	<require>无</require>
+	<keyword>技术方案一</keyword>
+	<language>中文</language>
+	<version>V0.1</version>
+	<description>无</description>
+	<client>PC，PAD</client>
+	<entry>index.html</entry>
+	<duration>10</duration>
+	<difficulty>1</difficulty>
+	<pass_score>60</pass_score>
+	<kp>kp001,kp002</kp>
+	<chapter id='C001' name='课前测评' url='001.html' type='test'>  
+			<page id='P001' url='001.html' isCommit='false' canBook='true' canTool='true' canFailure='true' canHistory='false'/>	
+			<page id='P002' url='002.html' isCommit='false' canBook='true' canTool='true' canFailure='true' canHistory='false'/>
+			<page id='P003' url='003.html' isCommit='true' canBook='true' canTool='false' canFailure='true' canHistory='false'/>
+			<page id='P004' url='004.html' isCommit='false' canBook='true' canTool='false' canFailure='true' canHistory='false'/>
+			<page id='P005' url='005.html' isCommit='false' canBook='true' canTool='false' canFailure='true' canHistory='false'/>
+			<page id='P006' url='006.html' isCommit='true' canBook='true' canTool='false' canFailure='true' canHistory='false'/>
+			<page id='P007' url='007.html' isCommit='false' canBook='true' canTool='false' canFailure='true' canHistory='false'/>
+			<page id='P008' url='008.html' isCommit='false' canBook='true' canTool='false' canFailure='true' canHistory='false'/>
+			<page id='P009' url='009.html' isCommit='true'  canBook='true' canTool='false' canFailure='true' canHistory='false'/>
+			<page id='P010' url='010.html' isCommit='false' canBook='true' canTool='false' canFailure='true' canHistory='false'/>
+	</chapter>
+	<menu id='C000' name='' url='' type='common'>  
+		<page id='P015' style='tool-big-a' name='故障现象' url='book.html' isCommit='false'/>
+		<page id='P016' style='tool-big-b' name='维修资料' url='tool.html' isCommit='false'/>
+		<page id='P017' style='tool-big-c' name='维修历史' url='failure.html' isCommit='false'/>
+		<page id='P018' style='tool-big-d' name='维修工具' url='history.html' isCommit='false'/>
+	</menu>
+	<score>
+		<question id='Q001' pageid='001' type='select' rate='10' kp='kp001'/>
+		<question id='Q002' pageid='002' type='select' rate='10' kp='kp002'/>
+		<question id='Q003' pageid='003' type='select' rate='10' kp='kp003'/>
+		<question id='Q004' pageid='004' type='select' rate='10' kp='kp004'/>
+		<question id='Q005' pageid='005' type='select' rate='10' kp='kp005'/>
+		<question id='Q006' pageid='006' type='select' rate='10' kp='kp006'/>
+		<question id='Q007' pageid='007' type='select' rate='10' kp='kp007'/>
+		<question id='Q008' pageid='008' type='select' rate='10' kp='kp008'/>
+		<question id='Q009' pageid='009' type='select' rate='10' kp='kp009'/>
+		<question id='Q010' pageid='010' type='select' rate='10' kp='kp010'/>
+	</score>
+</courseware>

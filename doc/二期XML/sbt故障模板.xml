@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fault>
+	<metadata>
+		<!--模式-->
+		<schema>XCJ</schema>
+		<schemaversion>1.0</schemaversion>
+	</metadata>
+	<name>诊断电控发动机怠速抖动故障</name>
+	<!--课件编号-->
+	<courseNumber>SBT_FCO_ES</courseNumber>
+	<!--故障编号-->
+	<faultNumber>SBT_FCO_ES_ES_0022_false</faultNumber>
+	<!--类型sbt/wbt/emu-->
+	<type>sbt</type>
+	<!--xml文件类型-->
+	<types>sbtFault</types>
+	<!--目的-->
+	<purpose>通过学习本课程能够对发动机怠速抖动故障进行再现，通过诊断过程培养学员针对发动机怠速抖动故障的诊断思路。</purpose>
+	<!--需求-->
+	<require>无</require>
+	<!--关键字-->
+	<keyword>发动机怠速抖动</keyword>
+	<!--描述-->
+	<description>无</description>
+	<!--持续时间-->
+	<duration>10</duration>
+	<!--困难-->
+	<difficulty>1</difficulty>
+	<!--总分数-->
+	<sumScore>100</sumScore>
+	<!--工单得分-->
+	<score>30</score>
+	<!--客户端平台-->
+	<client>PC</client>
+	<!--通过条件-->
+	<passCondition>60</passCondition>
+	<!--完成条件-->
+	<completeCondition>60</completeCondition>
+	<entry>SBT_FCO_ES_IG_001/index.html</entry>
+	<!--知识点维度编号-->
+	<kp>02,01</kp>
+	<questions>
+		<question id="q01" description="故障描述" remark="">
+			<question id="q01_01" description="发动机故障灯亮" remark="" type="1"></question>
+		</question>
+	
+		<question id="q02" description="启动前检查" remark="">
+			<question id="q02_01" description="冷却液液位" type="1">
+				<option id="q02_01_a1" description="正常" isRight="1"></option>
+				<option id="q02_01_a2" description="不正常" isRight="0"></option>
+			</question>
+			<question id="q02_01" description="发动机润滑油液位" type="1">
+				<option id="q02_02_a1" description="正常" isRight="1"></option>
+				<option id="q02_02_a2" description="不正常" isRight="0"></option>
+			</question>
+		</question>
+
+		<question id="q03" description="技能测试" remark="">
+			<question id="q01_03" description="下列关于发动机控制系统描述错误的是？" type="2">
+				<option id="q01_03_a1" description="A 在丰田车上，点火开关关闭时，发动机ECU常火线确保故障码等数据不会消失。" isRight=""></option>
+				<option id="q01_03_a2" description="B 通常将传感器接地端在发动机脑内部与发动机电脑接地端相连来防止传感器探测电压值的误差。" isRight=""></option>
+				<option id="q01_03_a3" description="C 热线式空气流量计为体积型空气流量计，需要进气温度传感器来校正进气量。" isRight=""></option>
+				<option id="q01_03_a4" description="D 负温度系数的水温传感器，电阻随温度的升高电阻值变小。" isRight=""></option>
+			</question>
+		</question>
+			
+		<question id="q04" description="故障代码检查" remark="">
+			<question id="q04_01" description="" type="4">
+				<option id="q04_01_a1" description="无DTC" isRight="0"></option>
+				<option id="q04_01_a2" description="有DTC" isRight="1">
+					<option id="q04_01_a2_01" description="选项一" isRight="1"/>
+					<option id="q04_01_a2_02" description="选项二" isRight="0"/>
+					<option id="q04_01_a2_03" description="选项三" isRight="0"/>
+				</option>
+			</question>
+		</question>
+		
+		<question id="q05" description="确认故障范围" remark="">
+			<question id="q05_01" description="根据上述检查进行判断并填写可能故障范围" type="3">
+				<question id="q05_01_01" >
+					<description >
+						<td>部件</td>
+						<td>判断</td>
+						<td>操作</td>
+					</description>
+				</question>
+				<question id="q05_01_02" >
+					<description>
+						<td>部件</td>
+						<td>判断</td>
+						<option>all</option>
+					</description>
+					<option id="q05_01_02_a1" description="可能" isRight="1"></option>
+					<option id="q05_01_02_a2" description="不可能" isRight="0"></option>
+				</question>
+			</question>
+		</question>
+
+		<question id="q06" description="故障部位确认和排除" remark="">
+			<question id="q06_01" description="根据检查结果，确定故障内容并注明：" type="5">
+				<question id="q06_01_01">
+					<description>
+						<option>0</option>
+						<option  description="元件名称:" isSub="1">0</option>
+					</description>
+				</question>
+				<question id="q06_01_02">
+					<description>
+						<option>1</option>
+						<option  description="线路故障:" isSub="1">1</option>
+					</description>
+				</question>
+				<option id="q05_01_01_a1" description="元件名称" isRight="1" >
+					<option id="q05_01_01_a1" description="元件名称1" isRight="1" />
+					<option id="q05_01_01_a1" description="元件名称2" isRight="1" />
+					<option id="q05_01_01_a1" description="元件名称3" isRight="1" />
+				</option>
+				<option id="q05_01_01_a1" description="线路故障" isRight="1" >
+					<option id="q05_01_01_a1" description="线路故障1" isRight="1" />
+					<option id="q05_01_01_a1" description="线路故障2" isRight="0" />
+				</option>
+			</question>
+		</question>
+
+	</questions>
+	
+	<scores>
+		<!--问题得分-->
+		<score type="question" id="s01" hid="q02_01" rate="3" kp=''></score>
+		<score type="question" id="s02" hid="q10_01" rate="3" kp='15'></score>
+		<score type="question" id="s03" hid="q10_02" rate="3" kp='15'></score>
+		<!--动作得分-->
+		<score type="handle" id="s04" hid="h034" rate="2"  kp='16'/>
+		<score type="handle" id="s05" hid="h032" rate="1"  kp='16'/>
+		<score type="handle" id="s06" hid="h033" rate="1"  kp='16'/>
+		<exclusive id="s01,s02" priorityId="s02"/> 
+	</scores>	
+</fault>
